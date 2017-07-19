@@ -13,31 +13,19 @@ colors:
     dark blue - #046c97
 */
 
-/*html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}*/
 html,
 body {
   height: 100%;
-}
-
-body {
   margin: 0;
-}
-
-article,aside,footer,header,nav,section {
-  display: block;
 }
 
 body {
   font-family: "Helvetica", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   color: #333;
   background-color: #fff;
+  font-weight: 400;
 }
 
 body {
@@ -49,30 +37,42 @@ body > div {
   width: 80%;
   margin: auto;
   background-color: #fff;
+  border: 2px solid #FCCE40;
+  margin-top: 4px;
+  border-radius: 3px;
+  margin-bottom: 40px;
+
 }
 
 section {
-  border-bottom: 3px solid #efefef;
+  border-bottom: 3px solid #eee;
+}
+section:last-child {
+  border-bottom: 0;
+  padding: 20px;
 }
 
 a {
   color: #046c97;
 }
 a:hover {
-  color: #1fabe5;
+  color: #5BC1EC;
 }
 
 h1,
 h2,
 h3 {
   font-weight: 600;
-  color: #019FE2;å
+  color: #019FE2;
 }
 
 p {
   font-size: 16px;
 }
 
+li {
+  font-weight: bold;
+}
 
 #site_header {
   background-color: #FF8523;
@@ -98,15 +98,13 @@ p {
 
 
 #page_content {
-    padding: 0 15px;
-
+  padding: 0 15px;
+  margin-bottom: 40px;
 }
-
 
 table {
   display: table;
   width: 100%;
-  /*border-collapse: separate;*/
   border-spacing: 2px;
   border-color: #046c97;
   border-spacing: 0;
@@ -117,11 +115,13 @@ table img {
   width: 50px;
   height: 50px;
   display: block;
+  margin: auto;
 }
 
 thead {
   background-color: #1fabe5;
   border: 1px solid #046c97;
+  color: #fff;
 
 }
 
@@ -129,51 +129,86 @@ thead > tr > td {
   border: 2px solid #046c97;
 }
 
+td,
 th {
-  text-align: left;
-}
-
-td, th {
   padding: 0;
-}
-tr {
-
 }
 
 td {
   padding: 8px;
-  /*line-height: 1.42857143;*/
+  text-align: left;
   vertical-align: middle;
   border: 2px solid #5BC1EC;
 }
 
-/*.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
-  border-top: 0;
-}*/
-
-
-/*.table-bordered>thead>tr>td,
-.table-bordered>thead>tr>th {
-  border-bottom-width: 2px;
+label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  display: inline-block;
+  line-height: 1.6;
 }
 
-.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
-  border: 1px solid #ddd;
+form {
+  background-color: #eee;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
-.table>thead>tr>th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #ddd;
-}*/
+form .name {
+  padding: 20px 20px;
+  background-color: #ff8523;
+  border-radius: 5px;
+  color: #fff;
+}
 
-/*.table>tbody>tr>td,
-.table>tbody>tr>th,
-.table>tfoot>tr>td,
-.table>tfoot>tr>th,
-.table>thead>tr>td,
-.table>thead>tr>th {
-  padding: 8px;
-  line-height: 1.42857143;
-  vertical-align: top;
-  border-top: 1px solid #ddd;
-}*/
+form input {
+  padding: 6px 12px;
+  line-height: 1.6;
+  margin-right: 20px;
+  background-color: #fff;
+  background-image: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+form .city_container {
+  margin: 30px 0;
+}
+
+form #submit_button {
+  display: inline-block;
+  padding: 10px 18px;
+  color: #fff;
+  background-color: #019FE2;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+form #submit_button:hover {
+  background-color: #046C97;
+  -webkit-transition: ease all .2s;
+  -o-transition: ease all .2s;
+  transition: ease all .2s;
+}
+
+form textarea {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  background-color: #fff;
+  border: 2px solid #5bc1ec;
+  border-radius: 5px;
+  height: 150px;
+  width: 100%;
+}
